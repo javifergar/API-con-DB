@@ -13,7 +13,6 @@ const selectPostsById = async (postId) => {
 
 const selectPostsByAutor = async (autorId) => {
   const [result] = await db.query('select * from posts inner join autores on posts.id_autor = autores.id_autor where autores.id_autor = ?', [autorId]);
-  if (result.length === 0) return null;
   return result;
 };
 
@@ -32,4 +31,9 @@ const deletePost = async (postId) => {
   return result;
 };
 
-module.exports = { selectPosts, selectPostsById, selectPostsByAutor, insertPost, updatePost, deletePost };
+const deleteAllPosts = async (autorId) => {
+  const [result] = await db.query('delete from posts where id_autor = ?', [autorId]);
+  return result;
+};
+
+module.exports = { selectPosts, selectPostsById, selectPostsByAutor, insertPost, updatePost, deletePost, deleteAllPosts };

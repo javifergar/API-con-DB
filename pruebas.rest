@@ -6,11 +6,11 @@ GET {{URL}}/posts
 
 ###
 
-GET {{URL}}/posts/4
+GET {{URL}}/posts/6
 
 ###
 
-GET {{URL}}/posts/autor/4
+GET {{URL}}/posts/autor/6
 
 ###
 
@@ -21,7 +21,7 @@ Content-Type: application/json
     "titulo": "El zapato amarillo",
     "descripcion": "He perdido un zapato muy feo",
     "categoria": "Objetos perdidos",
-    "id_autor": "5"
+    "id_autor": "12"
 }
 
 ###
@@ -39,7 +39,44 @@ Content-Type: application/json
 
 DELETE {{URL}}/posts/14
 
+
 ### AUTORES ###
 
+
+GET {{URL}}/autores
+
+###
+
+GET {{URL}}/autores/6
+
+###
+
+POST {{URL}}/autores
+Content-Type: application/json 
+
+{
+    "nombre": "Pepe Pepez",
+    "email": "pepito@example.com",
+    "imagen": "https://picsum.photos/200/300?random=5"
+}
+
+###
+
+PUT {{URL}}/autores/3
+Content-Type: application/json 
+
+{
+    "nombre": "Manolo Manolez",
+    "email": "manolito@example.com",
+    "imagen": "https://picsum.photos/200/300?random=5"
+}
+
+###
+
+DELETE {{URL}}/autores/9
+
+### AUTORES ###
+
+DELETE {{URL}}/autores/all/12
 
 
