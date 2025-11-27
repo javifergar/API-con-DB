@@ -1,0 +1,45 @@
+@URL = http://localhost:3000/api
+
+### POSTS ###
+
+GET {{URL}}/posts
+
+###
+
+GET {{URL}}/posts/4
+
+###
+
+GET {{URL}}/posts/autor/4
+
+###
+
+POST {{URL}}/posts
+Content-Type: application/json 
+
+{
+    "titulo": "El zapato amarillo",
+    "descripcion": "He perdido un zapato muy feo",
+    "categoria": "Objetos perdidos",
+    "id_autor": "5"
+}
+
+###
+
+PUT {{URL}}/posts/13
+Content-Type: application/json 
+
+{
+    "titulo": "El zapato verde",
+    "descripcion": "He perdido un zapato muy xulo",
+    "categoria": "Objetos perdidos"
+}
+
+###
+
+DELETE {{URL}}/posts/14
+
+### AUTORES ###
+
+
+
