@@ -1,0 +1,82 @@
+@URL = http://localhost:3000/api
+
+### POSTS ###
+
+GET {{URL}}/posts
+
+###
+
+GET {{URL}}/posts/6
+
+###
+
+GET {{URL}}/posts/autor/3
+
+###
+
+POST {{URL}}/posts
+Content-Type: application/json 
+
+{
+    "titulo": "El zapato amarillo",
+    "descripcion": "He perdido un zapato muy feo",
+    "categoria": "Objetos perdidos",
+    "id_autor": "17"
+}
+
+###
+
+PUT {{URL}}/posts/57
+Content-Type: application/json 
+
+{
+    "titulo": "El zapato rojo",
+    "descripcion": "He perdido un zapato muy xulo",
+    "categoria": "Objetos perdidos"
+}
+
+###
+
+DELETE {{URL}}/posts/57
+
+
+### AUTORES ###
+
+
+GET {{URL}}/autores
+
+###
+
+GET {{URL}}/autores/4
+
+###
+
+POST {{URL}}/autores
+Content-Type: application/json 
+
+{
+    "nombre": "Pepe Pepez",
+    "email": "pepito1@example.com",
+    "imagen": "https://picsum.photos/200/300?random=5"
+}
+
+###
+
+PUT {{URL}}/autores/17
+Content-Type: application/json 
+
+{
+    "nombre": "Manolo Manolez",
+    "email": "manolitso@example.com",
+    "imagen": "https://picsum.photos/200/300?random=5"
+}
+
+###
+
+DELETE {{URL}}/autores/16
+
+### AUTORES ###
+
+DELETE {{URL}}/autores/all/16
+
+
