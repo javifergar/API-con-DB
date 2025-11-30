@@ -26,4 +26,4 @@ const deleteAutor = async (autorId) => {
   return result;
 };
 
-module.exports = { selectAutor, selectAutorById, insertAutor, insertAutor, updateAutor, deleteAutor };
+module.exports = { selectAutor, selectAutorById, insertAutor, updateAutor, deleteAutor };

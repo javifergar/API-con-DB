@@ -10,7 +10,7 @@ GET {{URL}}/posts/6
 
 ###
 
-GET {{URL}}/posts/autor/6
+GET {{URL}}/posts/autor/3
 
 ###
 
@@ -21,23 +21,23 @@ Content-Type: application/json
     "titulo": "El zapato amarillo",
     "descripcion": "He perdido un zapato muy feo",
     "categoria": "Objetos perdidos",
-    "id_autor": "12"
+    "id_autor": "17"
 }
 
 ###
 
-PUT {{URL}}/posts/13
+PUT {{URL}}/posts/57
 Content-Type: application/json 
 
 {
-    "titulo": "El zapato verde",
+    "titulo": "El zapato rojo",
     "descripcion": "He perdido un zapato muy xulo",
     "categoria": "Objetos perdidos"
 }
 
 ###
 
-DELETE {{URL}}/posts/14
+DELETE {{URL}}/posts/57
 
 
 ### AUTORES ###
@@ -47,7 +47,7 @@ GET {{URL}}/autores
 
 ###
 
-GET {{URL}}/autores/6
+GET {{URL}}/autores/4
 
 ###
 
@@ -56,27 +56,27 @@ Content-Type: application/json
 
 {
     "nombre": "Pepe Pepez",
-    "email": "pepito@example.com",
+    "email": "pepito1@example.com",
     "imagen": "https://picsum.photos/200/300?random=5"
 }
 
 ###
 
-PUT {{URL}}/autores/3
+PUT {{URL}}/autores/17
 Content-Type: application/json 
 
 {
     "nombre": "Manolo Manolez",
-    "email": "manolito@example.com",
+    "email": "manolitso@example.com",
     "imagen": "https://picsum.photos/200/300?random=5"
 }
 
 ###
 
-DELETE {{URL}}/autores/9
+DELETE {{URL}}/autores/16
 
 ### AUTORES ###
 
-DELETE {{URL}}/autores/all/12
+DELETE {{URL}}/autores/all/16
 
 

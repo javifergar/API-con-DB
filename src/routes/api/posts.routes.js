@@ -3,8 +3,8 @@ const { getAllPosts, getPostsById, getPostsByAutor, createPost, updatePost, dele
 const router = require('express').Router();
 
 router.get('/', getAllPosts);
-router.get('/:postId', getPostsById);
 router.get('/autor/:autorId', getPostsByAutor);
+router.get('/:postId', getPostsById);
 router.post('/', createPost);
 router.put('/:postId', updatePost);
 router.delete('/:postId', deletePost);
